@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box Model</title>
+
+    <style>
+        .outer {
+            background-color: #f97316;
+            width: 420px;
+            height: 280px;
+            margin: 40px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middle {
+            background-color: #64748b;
+            width: 330px;
+            height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner {
+            background-color: #22c55e;
+            width: 230px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: #db2777;
+            width: 130px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        Margin
+
+        <div class="middle">
+            Border
+
+            <div class="inner">
+                Padding
+
+                <div class="box">
+                    Content
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

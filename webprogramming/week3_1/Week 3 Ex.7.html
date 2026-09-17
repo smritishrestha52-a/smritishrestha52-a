@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+
+  <style>
+    body {
+      background-color: #f1f5f9;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: white;
+      width: 320px;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      background-color: #16a34a;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0 auto 15px;
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .role {
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e2e8f0;
+      margin: 20px 0;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background-color: #16a34a;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="avatar">S</div>
+
+    <div class="name">Smriti</div>
+
+    <div class="role">Web Developer</div>
+
+    <hr>
+
+    <div class="skills">
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Python</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
