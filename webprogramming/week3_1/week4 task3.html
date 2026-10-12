@@ -1,0 +1,31 @@
+const input = document.querySelector('#todo-input');
+const addBtn = document.querySelector('#add-btn');
+const list = document.querySelector('#todo-list');
+const emptyMsg = document.querySelector('#empty-msg');
+
+function updateEmpty() {
+  emptyMsg.style.display = list.children.length === 0 ? 'block' : 'none';
+}
+
+function addTask() {
+  const text = input.value.trim();
+  if (!text) return;
+  const li = document.createElement('li');
+  li.className = 'todo-item';
+  li.innerHTML = `<span>${text}</span><button class="del-btn">✕</button>`;
+  list.appendChild(li);
+  input.value = '';
+  updateEmpty();
+}
+
+addBtn.addEventListener('click', addTask);
+input.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') addTask();
+});
+list.addEventListener('click', (e) => {
+  if (e.target.classList.contains('del-btn')) {
+    e.target.closest('li').remove();
+    updateEmpty();
+  }
+});
+updateEmpty();
